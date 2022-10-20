@@ -1,0 +1,9 @@
+function myFunction() {
+  
+}
+var ss = SpreadsheetApp.getActiveSpreadsheet();
+var sheet = ss.getSheets()[0];
+var range = sheet.getRange("A1:B");
+
+// Sorts by the values in the labled column)
+range.sort(2);
